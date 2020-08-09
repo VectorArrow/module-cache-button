@@ -1,1 +1,16 @@
-<!-- proof of concept -->
+<?php /** Magento\Backend\Block\Template **/
+
+/** \VectorArrow\CacheButton\ViewModel\ActionButtons\CacheClear **/
+$view_model = $this->getData( 'view_model' );
+
+/** string - the endpoint for flushing the cache **/
+$cache_flush_url = $view_model->getCacheFlushUrl();
+
+?>
+<button
+    id="quick_flush_cache"
+    title="Flush Magento Cache"
+    class="action-default scalable flush-cache-storage"
+    onclick="setLocation('<?= $cache_flush_url ?>')" >
+<span><?= __('Flush Magento Cache') ?></span>
+</button>
