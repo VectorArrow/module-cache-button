@@ -2,7 +2,7 @@
 	"name": "vectorarrow/module-cache-button",
 	"description": "Adds a convenient cache clear button to the Magento admin",
 	"type": "magento2-module",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"authors": [
 		{
 			"email": "swr.vector@gmail.com",
